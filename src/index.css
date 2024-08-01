@@ -1,0 +1,43 @@
+
+button{
+  margin-right: 10px;
+}
+/* Aplica flex-direction: column-reverse para pantallas más pequeñas que sm */
+.custom-sm{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 576px) {
+  /* Revertir a fila para pantallas sm y mayores */
+  .custom-sm{
+    flex-direction: row;
+  }
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+.active{
+  border-bottom: 2px solid aqua;
+
+}
+
+
+.fondo {
+
+  background: linear-gradient(to bottom right, #ff7eb9, #3a7bd5);
+
+}
+.formulario{
+  padding: 25px;
+  width: 25rem;
+  height: 24rem;
+  background-color: rgba(255, 255, 255, 0.4); /* Fondo transparente */
+  backdrop-filter: blur(20px); /* Efecto de difuminado */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Borde ligero */
+}
+
